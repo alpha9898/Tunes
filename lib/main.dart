@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'screens/home_page.dart';
+import 'package:tunes/views/tune_view.dart';
 
 void main() {
-  runApp(const Tune());
+  runApp(const TuneApp());
 }
 
-class Tune extends StatelessWidget {
-  const Tune({super.key});
+class TuneApp extends StatelessWidget {
+  const TuneApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: TuneView(),
     );
   }
 }
